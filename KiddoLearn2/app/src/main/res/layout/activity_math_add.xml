@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Math_Add"
+    >
+
+    <ImageView
+        android:id="@+id/imvMath"
+        android:layout_width="258dp"
+        android:layout_height="76dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="70dp"
+        android:src="@drawable/image_math2"
+        />
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/imvMath"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="82dp"
+        android:background="@drawable/image_selection2" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="240dp">
+
+
+        <ImageView
+            android:id="@+id/imvHeart1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/baseline_favorite" />
+
+        <ImageView
+            android:id="@+id/imvHeart2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_favorite" />
+
+        <ImageView
+            android:id="@+id/imvHeart3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_favorite" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvLevel"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="95dp"
+        android:text="Add - Level 1"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="40dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="SCORES : "
+            android:textSize="18dp"
+            android:layout_weight="6"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvScores"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="0 "
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_below="@+id/imvMath"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/bg_question"
+        android:gravity="center"
+        android:text="Question 1"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/llanswer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvQuestion"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAnswer1"
+            android:layout_width="155dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#00B8D4"
+            android:text="Answer1" />
+
+        <Button
+            android:id="@+id/btnAnswer2"
+            android:layout_width="155dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#00B8D4"
+            android:text="Answer2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llanswer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llanswer1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAnswer3"
+            android:layout_width="155dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#00B8D4"
+            android:text="Answer3" />
+
+        <Button
+            android:id="@+id/btnAnswer4"
+            android:layout_width="155dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#00B8D4"
+            android:text="Answer4" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAlamrs"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/llanswer2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:drawableStart="@drawable/baseline_access_alarms"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:text="00:00" />
+
+    <TextView
+        android:id="@+id/tvBackToMath_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llanswer2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        android:drawableStart="@drawable/baseline_keyboard_backspace"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="BACK" />
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#83FF6D00" /> <!-- Màu nền mờ với opacity 70% -->
+            <stroke android:color="#FF3232"
+                    android:width="5dp"/>
+            <corners android:radius="20dp" /> <!-- Bán kính bo góc -->
+        </shape>
+    </item>
+</layer-list>
